@@ -1,0 +1,56 @@
+=== Plugin Name ===
+Contributors: rcane
+Tags: raw image, raw, dng, nef, cr2, photo, image, photograph, DSLR
+Requires at least: 3.0
+Tested up to: 3.9.2
+Stable tag: 0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Raw enables you to upload RAW image files straight from your DSLR to WordPress with thumbnail support and without loosing or damaging the RAW file.
+
+== Description ==
+
+Raw enables you to upload RAW image files straight from your DSLR to WordPress.
+Once the RAW image has been uploaded, Raw will create a JPEG copy and WordPress will then generate all thumbnails.
+
+Raw currently suppors DNG, CR2 and NEF out of the box but filters allows you to add support for more file types.
+
+* Upload RAW image files like .DNG, .CR2 and .NEF
+* Thumbnail support
+
+Raw requires the PHP module ImageMagic (http://php.net/manual/book.imagick.php) to convert the RAW files to jpeg.
+
+== Tested on ==
+
+Ubuntu 13.10 and WordPress 3.9.2
+
+== Installation ==
+
+1. Upload `raw` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Frequently Asked Questions ==
+
+= Which file formats does Raw support? =
+
+Raw supports DNG, CR2 and NEF out of the box. But you can use filters to add other formats.
+
+= How do I know if I have ImageMagic? =
+
+Raw will tell you if ImageMagic is installed or not
+
+= How do I install ImageMagic? =
+
+Contact your web hosting company.
+
+If you have your own server:
+
+Ubuntu/Debian:
+    sudo apt-get install php5-imagick
+    sudo service apache2 reload
+
+== Changelog ==
+
+= 0.1 =
+* First version
