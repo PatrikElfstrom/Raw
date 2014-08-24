@@ -21,6 +21,14 @@ Raw currently suppors DNG, CR2 and NEF out of the box but filters allows you to 
 
 Raw requires the PHP module ImageMagic (http://php.net/manual/book.imagick.php) to convert the RAW files to jpeg.
 
+Filters
+* upload_mimes_raw_file_types_special
+Add special cases where the MIME type is not the same as the file ending.
+For example DNG has the TIFF MIME type.
+
+* add_raw_mimes
+Add or remove supported RAW file types.
+
 == Tested on ==
 
 Ubuntu 13.10 and WordPress 3.9.2
