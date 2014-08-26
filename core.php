@@ -17,11 +17,12 @@ class Raw_Core {
         
         // Generate a thumbnail from the raw file and send it to wordpress
         add_filter('wp_generate_attachment_metadata', array($this, 'onGenerateAttachmentMetadata'), 10, 2);
+        
 	}
     
     // if the uploaded file ending was not in the special cases array
     // remove the mime_to_exts_override filter (so it doesn't fuck up other files)
-    function check_file_type($file) {
+    public function check_file_type($file) {
         if(isset($file['name'])) {
             global $uploaded_file_ending;
             $file_name_array = explode( '.', $file['name'] );

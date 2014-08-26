@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Raw
-Plugin URI: http://patrikelfstrom.se/raw
+Plugin URI: http://patrikelfstrom.se/project/raw/
 Description: Raw enables you to upload RAW image files to WordPress with thumbnail support and without loosing or damaging the RAW file. Currently supporting DNG, CR2 and NEF. Filters allows you to add support for more file types.
-Version: 0.1
+Version: 0.2
 Author: Patrik Elfström
 Author URI: http://patrikelfstrom.se/
 Copyright: Patrik Elfström
@@ -24,7 +24,6 @@ if( ! class_exists('Raw') ) {
             /* Do nothing here */
         }
         
-        
         // Initialize: The real constructor to initialize raw
         function initialize() {
         
@@ -32,16 +31,7 @@ if( ! class_exists('Raw') ) {
             
             // vars
             $this->settings = array(
-                
-                // basic
-                'name'			=> __('Raw', 'raw'),
-                'version'		=> '0.1',
-                            
-                // urls
-                'basename'		=> plugin_basename( __FILE__ ),
-                'path'			=> plugin_dir_path( __FILE__ ),
-                'dir'			=> plugin_dir_url( __FILE__ ),
-                
+            
                 // options
                 'raw_file_types'	=> array(
                     'DNG' => 'image/AdobeRawDNG',
@@ -54,7 +44,7 @@ if( ! class_exists('Raw') ) {
                 'raw_file_types_special' => array(
                     'DNG' => 'image/tiff',
                     'CR2' => 'image/tiff',
-                    'NEF' => 'image/tiff',
+                    'NEF' => 'image/tiff'
                 )
             );
                 
