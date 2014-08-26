@@ -67,5 +67,8 @@ Add or remove supported RAW file types.
 
 == Changelog ==
 
+= 0.2 =
+* Cleaned up the code and fixed descriptions
+
 = 0.1 =
 * First version
